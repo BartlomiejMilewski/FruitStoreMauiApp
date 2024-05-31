@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FruitStoreApp.Pages.HomePage"
+             Shell.NavBarIsVisible="False"
+             xmlns:vm="clr-namespace:FruitStoreApp.ViewModels"
+             xmlns:models="clr-namespace:FruitStoreApp.Models"
+             xmlns:controls="clr-namespace:FruitStoreApp.Controls"
+             xmlns:converters="clr-namespace:FruitStoreApp.Converter"
+             xmlns:dto="clr-namespace:FruitStoreApp.Shared.Dtos;assembly=FruitStoreApp.Shared"
+             x:DataType="vm:HomePageViewModel">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <converters:StringToColorConverter x:Key="StringToColor"/>
+
+            <Style TargetType="Label" x:Key="H1">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 10"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H2">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 8"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="H3">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 6"/>
+            </Style>
+            <Style TargetType="Label" x:Key="H4">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 4"/>
+            </Style>
+            <Style TargetType="Label" x:Key="H5">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 2"/>
+            </Style>
+            <Style TargetType="Label" x:Key="H6">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0, 1"/>
+            </Style>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+    <Grid>
+    <ScrollView>
+        <Grid>
+            <VerticalStackLayout Padding="10, 15">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Hi, &#10;"
+                          TextColor="{StaticResource Primary}"                          
+                          FontSize="14"
+                          FontAttributes="Bold"/>
+                            <Span Text="Abhay"
+                          TextColor="{StaticResource Mid}"
+                          FontSize="18"
+                          FontAttributes="Bold"
+                          />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <controls:Spacer Space="15"/>
+
+                <Label Text="Let's order some fresh fruits and vegetables for you"
+               Style="{StaticResource H2}"
+               LineHeight="1.3"
+               Opacity="0.8"
+               />
+                <controls:Spacer Space="20"/>
+
+                <CollectionView ItemsSource="{Binding Offers}"
+                        HeightRequest="180">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"
+                                   ItemSpacing="15"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Offer">
+                            <Border StrokeShape="RoundRectangle 20"
+                            StrokeThickness="0"
+                            Background="Transparent"
+                            HeightRequest="180"
+                            WidthRequest="300">
+                                <Grid >
+                                    <BoxView Color="{Binding BgColor, Converter={StaticResource StringToColor}}"
+                                     Opacity="0.5"/>
+                                    <Grid RowDefinitions="Auto, *, Auto"
+                                  Padding="15">
+                                        <Label Grid.Row="0"
+                                       Text="{Binding Title, StringFormat='{0} !!!'}"
+                                       Style="{StaticResource H3}"/>
+                                        <Label Grid.Row="1"
+                                       Text="{Binding Description}"
+                                       FontSize="16"
+                                       VerticalOptions="Center"/>
+                                        <Label Grid.Row="2"
+                                       Text="{Binding Code}"
+                                       Style="{StaticResource H4}"
+                                       HorizontalOptions="Center"
+                                       BackgroundColor="{StaticResource Primary}"
+                                       TextColor="White"
+                                       Padding="10, 5"/>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <controls:Spacer Space="20"/>
+
+                <Label Text="Shop by category"
+               Style="{StaticResource H2}"/>
+
+                <controls:Spacer Space="5"/>
+
+                <CollectionView ItemsSource="{Binding Categories}"
+                        HeightRequest="175">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"
+                                   ItemSpacing="12"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Category">
+                            <Border StrokeShape="RoundRectangle 5"
+                            StrokeThickness="0">
+                                <Grid>
+                                    <Image 
+                                   Aspect="AspectFill"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   HeightRequest="175"
+                                   WidthRequest="150"
+                                   Opacity="0.9">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding Image}"
+                                                    CachingEnabled="True"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <Border StrokeShape="RoundRectangle 8"
+                                    StrokeThickness="0"
+                                    BackgroundColor="White"
+                                    VerticalOptions="End"
+                                    Margin="5"
+                                    Padding="10">
+                                        <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="{StaticResource Mid}"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <controls:Spacer Space="15"/>
+
+                <Label Text="Popular"
+                Style="{StaticResource H2}"/>
+
+                <controls:ProductsListControl Products="{Binding PopularProducts}"
+                                              AddRemoveCartClicked="ProductsListControl_AddRemoveCartClicked"/>
+
+            </VerticalStackLayout>
+            <Grid IsVisible="{Binding IsBusy}">
+                <BoxView Color="{StaticResource Mid}"/>
+                <VerticalStackLayout HorizontalOptions="Center"
+                                 VerticalOptions="Center">
+                    <ActivityIndicator IsRunning="True"
+                                   Color="White"
+                                   HorizontalOptions="Center"/>
+                    <Label Text="Fetching data..."
+                       TextColor="White"
+                       HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+        <controls:CartControl Count="{Binding CartCount}"/>
+    </Grid>
+</ContentPage>

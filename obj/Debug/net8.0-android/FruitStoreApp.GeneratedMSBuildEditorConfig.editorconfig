@@ -1,0 +1,101 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FruitStoreApp
+build_property.ProjectDir = /Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Controls/CartControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Controls.CartControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls/CartControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls/CartControl.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Controls/ProductListControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Controls.ProductListControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls/ProductListControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls/ProductListControl.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Controls/Spacer.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Controls.Spacer.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls/Spacer.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls/Spacer.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Pages/BasketPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Pages.BasketPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/BasketPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/BasketPage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Pages/CategoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Pages.CategoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/CategoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/CategoriesPage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Pages/HelpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Pages.HelpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/HelpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/HelpPage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Pages/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Pages.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/HomePage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Pages/OrdersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Pages.OrdersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/OrdersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/OrdersPage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Pages/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Pages.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ProfilePage.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FruitStoreApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="FruitStoreApp.app/FruitStoreApp">
+      <BCSymbolMapName>FruitStoreApp.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>FruitStoreApp.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp/obj/Debug/net8.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>FruitStoreApp.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/bartlomiej.milewski/Desktop/MauiFruitStore/FruitStore/FruitStoreApp</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
